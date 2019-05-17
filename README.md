@@ -7,6 +7,7 @@ heterozygosity is defined as the expected value of 2x(1-x) given the Wright's di
 the number of substitutions per site is defined using Kimura's fixation probability with relative fitness 2s, s, and 0 assigned to AA, Aa, and aa, respectively;
 
 `distr.m`\
+how many of new mutations are deleterious;
 
 `parser.ipynb`\
 just a notebook to parse the output of `pols.m`, `subs.m`, and `distr.m` to pass it to `plots.m`;
