@@ -9,4 +9,5 @@ the number of substitutions per site is defined using Kimura's fixation probabil
 `parser.ipynb`\
 just a notebook to parse the output of `pols.m` and `subs.m` to pass it to `plots.m`;
 
-`plots.m`
+`plots.m`\
+plotting plots
