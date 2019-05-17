@@ -10,7 +10,7 @@ the number of substitutions per site is defined using Kimura's fixation probabil
 calculates the proportion of deleterious mutations for the skew normal distributed selection coefficients on a grid of distribution paremeters;
 
 `parser.ipynb`\
-parses the output of `pols.m`, `subs.m`, and `distr.m` to pass it to `plots.m`;
+parses the output of `pols.m`, `subs.m`, and `distr.m` to pass it to `plots.nb`;
 
 `plots.nb`\
 plots plots
