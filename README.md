@@ -17,5 +17,5 @@ plots plots
 
 
 #### To do:
-- [ ] compare outputs of pols with DuffyCoordinates and QuasiMonteCarlo
-- [ ] run subs with a finer grid (20x20x20)
+- [ ] compare outputs of `pols-h.m` with DuffyCoordinates and QuasiMonteCarlo
+- [ ] run `subs-h.m` with a finer grid (20x20x20)
