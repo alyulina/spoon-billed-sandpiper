@@ -9,7 +9,7 @@ same as above except that relative fitness s, hs, and 0 is assigned to AA, Aa, a
 `subs.m`\
 the number of substitutions per site is defined using Kimura's fixation probability with relative fitness 2s, s, and 0 assigned to AA, Aa, and aa, respectively, and assuming N = Ne;
 
-`subs-h.m`
+`subs-h.m`\
 same as above except that relative fitness s, hs, and 0 is assigned to AA, Aa, and aa, respectively;
 
 `distr.m`\
