@@ -15,3 +15,7 @@ parses the output of `pols.m`, `subs.m`, and `distr.m` to pass it to `plots.nb`;
 `plots.nb`\
 plots plots
 
+
+#### To do:
+- [ ] compare outputs of pols with DuffyCoordinates and QuasiMonteCarlo
+- [ ] run subs with a finer grid (20x20x20)
