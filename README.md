@@ -3,12 +3,12 @@
 `pols.m`\
 heterozygosity is defined as the expected value of 2x(1-x) given the Wright's distribution of allele frequency x and the truncated skew normal distribution of selection coefficients with relative fitness 2s, s, and 0 assigned to AA, Aa, and aa, respectively;
 
-  `pols-h.m`
+`pols-h.m`
 
 `subs.m`\
 the number of substitutions per site is defined using Kimura's fixation probability with relative fitness 2s, s, and 0 assigned to AA, Aa, and aa, respectively;
 
-  `subs-h.m`
+`subs-h.m`
 
 `distr.m`\
 calculates the proportion of deleterious mutations for the skew normal distributed selection coefficients on a grid of distribution paremeters;
