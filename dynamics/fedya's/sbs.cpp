@@ -37,7 +37,7 @@ using std::time;
 using boost::variate_generator;
 
 #define GENERATIONS 20000
-#define MAXPOPSIZE 2000
+#define MAXPOPSIZE 10000
 #define GENOMESIZE 100000
 #define MU 0.00000012
 
@@ -92,9 +92,10 @@ int main (int argc, char** argv)
     alpha = atof(argv[3]); //-3;
     h_ave = atof(argv[4]); //0.1;
     h_std = 0.3;
-    popsize = MAXPOPSIZE;
+    popsize = 2000;
     
     ofstream outfile;
+    ofstream errfile;
     outfile.open (argv[5]);
 
     cout << "mu " << mu << endl;
@@ -144,10 +145,10 @@ int main (int argc, char** argv)
         
         muts[i][0] = boost::math::quantile(skew_norm_dist, real_dist(mt));
              if (muts[i][0] < -0.1) {muts[i][0] = -0.1;}
-        else if (muts[i][0] > 0.1) {muts[i][0] = -0.1;}
+        else if (muts[i][0] >  0.1) {muts[i][0] =  0.1;}
         
         muts[i][1] = norm(mt);
-        while ((muts[i][1] >= 1) or (muts[i][1] <= 0)){muts[i][1] = norm(mt);} //make this a truncated normal
+        while ((muts[i][1] > 1) or (muts[i][1] < 0)){muts[i][1] = norm(mt);} //make this a truncated normal
                
         muts[i][1] = muts[i][1] * muts[i][0]; //get h into sh form.
     }
@@ -158,7 +159,6 @@ int main (int argc, char** argv)
         time_t now = time(0);
         dt = ctime(&now);
         outfile << "Run " << i << " start time : " << dt << endl;
-        cout << "Run " << i << " start time : " << dt << endl;
 
         for (gener = 0; gener < GENERATIONS; gener++)
         {
@@ -166,7 +166,7 @@ int main (int argc, char** argv)
             num_muts =  rvt() * popsize/10000;
 
             mutation(popsize, num_muts);
-        
+
             reproduction(popsize, popsize);
         
             update_fitness(popsize);
@@ -254,10 +254,9 @@ int main (int argc, char** argv)
             
         }
 
-        time_t now1 = time(0);
-        dt = ctime(&now1);
+        time_t nowx = time(0);
+        dt = ctime(&nowx);
         outfile << "Run " << i << "time at the end: " << dt << endl;
-        cout << "Run " << i << "time at the end: " << dt << endl;
     }
     
     outfile.close();
@@ -353,7 +352,6 @@ void reproduction (int popsize, int newpopsize)
     {if (fit[i] > maxfit){maxfit=fit[i];}}
     
     if (maxfit < 0) {maxfit=0;}
-    
     //populate the new population
     
     newpop.clear();
