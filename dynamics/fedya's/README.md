@@ -8,3 +8,4 @@ To do:
 - [ ] add all the notebooks used to analyze output data  
 - [ ] add mathematica code used to make plots  
 - [ ] add forks / folders for trying different things or store only the very final results
+- [ ] count the # of mutations normalized bt genome size
