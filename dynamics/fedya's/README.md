@@ -9,3 +9,4 @@ To do:
 - [ ] add mathematica code used to make plots  
 - [ ] add forks / folders for trying different things or store only the very final results
 - [ ] count the # of mutations normalized bt genome size
+- [ ] update .cpp scripts if those with h = 0 outperform the current ones
