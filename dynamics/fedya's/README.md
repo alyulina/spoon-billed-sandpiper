@@ -6,8 +6,8 @@ To run: `rns mu sigma alpha h out.txt`
 
 To do:  
 - [ ] update everything 
-- [ ] add all the notebooks used to analyze output data  
-- [ ] add mathematica code used to make plots  
+- [ ] add all the notebooks used to analyze output data / only the final version?
+- [ ] add mathematica code used to make plots / only the final version?
+- [ ] add python code used to make plots / only the final version?
 - [ ] add forks / folders for trying different things or store only the very final results
-- [ ] count the # of mutations normalized bt genome size
-- [ ] update .cpp scripts if those with h = 0 outperform the current ones
+- [ ] update .cpp scripts
