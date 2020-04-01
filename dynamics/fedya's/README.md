@@ -9,5 +9,4 @@ To do:
 - [ ] add all the notebooks used to analyze output data / only the final version?
 - [ ] add mathematica code used to make plots / only the final version?
 - [ ] add python code used to make plots / only the final version?
-- [ ] add forks / folders for trying different things or store only the very final results
 - [ ] update .cpp scripts
