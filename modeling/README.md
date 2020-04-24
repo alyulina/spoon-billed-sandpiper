@@ -20,4 +20,6 @@ plots plots
 #### To do:
 - [ ] have the final results here, if not the data then at least the plots
 
-#### Raimundo Saona is helping with the computations now (I couldn't do it for when ![formula](https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1))
+#### Raimundo Saona is helping with the computations now (I couldn't do it for when )
+
+![formula](https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1)
