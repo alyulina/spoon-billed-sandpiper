@@ -14,5 +14,3 @@ parses the output of `pols.m`, `subs.m`, and `distr.m` to pass it to `plots.nb`;
 
 `plots.nb`\
 plots plots
-
-Raimundo Saona is helping with the computations now (I couldn't do it for arbitrary h); see `./rai's`
