@@ -1,1 +1,1 @@
-Raimundo Saona, a rotation student, is helping to compute *pols* and *subs*
+Raimundo Saona, a rotation student, is helping compute *pols* and *subs*
