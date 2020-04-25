@@ -15,4 +15,4 @@ parses the output of `pols.m`, `subs.m`, and `distr.m` to pass it to `plots.nb`;
 `plots.nb`\
 plots plots
 
-Note: see [papers](../papers) for references.
+Note: see [papers](../../papers) for references.
