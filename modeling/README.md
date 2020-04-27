@@ -1,1 +1,3 @@
-Have a description of everything.
+To do:
+
+- [ ] have a description of everything
