@@ -16,6 +16,6 @@ parses the output of `pols.m`, `subs.m`, and `distr.m` to pass it to `plots.nb`;
 plots plots
 
 To do:  
--[ ] rewrite the plotting pipeline in python
+- [ ] rewrite the plotting pipeline in python
 
 Note: see [papers](../../papers) for references.
