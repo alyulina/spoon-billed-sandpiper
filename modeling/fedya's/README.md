@@ -6,6 +6,7 @@ To run: `rns mu sigma alpha beta out.txt`, where *mu*, *sigma*, and *alpha* are 
    
     
 To do:  
+- [ ] rewrite mathematica code in python
 - [ ] update .cpp scripts
 - [ ] add all the notebooks used to analyze output data / only the final version?
 - [ ] add mathematica code used to make plots / only the final version?
