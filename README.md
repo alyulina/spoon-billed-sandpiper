@@ -5,6 +5,7 @@ To do:
 - [ ] do what Fedya asked to do analytically
 - [ ] wait for Rai's reply to Fedya's email
 
+(eventually)
 - [ ] have a proper description here and in other READMEs
 - [ ] upload final code / plots
 - [ ] write down paths to files on the cluster
