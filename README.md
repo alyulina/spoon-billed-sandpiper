@@ -25,3 +25,5 @@ ver18, ver19 not scaling sigma in Fedya's code, but now it does not work for lar
 ver20: taking exp(s) instead of s for fitness + no limits on the distr of s; still looks bad (Rai's results do not match Fedya's) – what's wrong?
 
 trying to understand why Fedya's results do not match Rai's? either something is wrong with interpolation / me parsing things (running stuff to see if this is the case) or with Rai's code / math (currently focusing on this) or with Fedya's code 
+
+Fedya: maybe we should be scaling sigma after all
