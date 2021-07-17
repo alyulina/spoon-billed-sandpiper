@@ -1,5 +1,10 @@
 To do:
 
+(right now)
+- [ ] once the jobs are finished: make plots of mu-sigma grids to compare the results of Rai's and Fedya's codes; also compute errors from fluctuations in Fedya's code; the path to files on the cluster is /nfs/scistore08/kondrgrp/alyulina/sandpiper/dynamics/h=sigm/ver20/rai and locally /Users/alyulina/Projects/Kondrashov/Sandpiper/h=sigm/ver20/Rai's see parsing again.ipynb
+- [ ] do what Fedya asked to do analytically
+- [ ] wait for Rai's reply to Fedya's email
+
 - [ ] have a proper description here and in other READMEs
 - [ ] upload final code / plots
 - [ ] write down paths to files on the cluster
