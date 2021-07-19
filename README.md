@@ -1,4 +1,4 @@
-To do:
+**To do:**
 
 (right now)
 - [ ] run the latest version of Fedya's code (fixed: sigmoid instead of exp + beta is scaled inside now) on Rai's points and compare it with the 0 to 1 Rai's frequency version – this is ver22; write to Fedya once done – hopefully it all works everywhere except for where there are beneficial allelel because the theory can't describe them
