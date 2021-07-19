@@ -1,9 +1,10 @@
 To do:
 
 (right now)
-- [ ] once the jobs are finished: make plots of mu-sigma grids to compare the results of Rai's and Fedya's codes; also compute errors from fluctuations in Fedya's code; the path to files on the cluster is `/nfs/scistore08/kondrgrp/alyulina/sandpiper/dynamics/h=sigm/ver20/rai` and locally `/Users/alyulina/Projects/Kondrashov/Sandpiper/h=sigm/ver20/Rai's` see `parsing again.ipynb`
+- [ ] run the latest version of Fedya's code (fixed: sigmoid instead of exp + beta is scaled inside now) on Rai's points and compare it with the 0 to 1 Rai's frequency version – this is ver22; write to Fedya once done – hopefully it all works everywhere except for where there are beneficial allelel because the theory can't describe them
+- [x] once the jobs are finished: make plots of mu-sigma grids to compare the results of Rai's and Fedya's codes; also compute errors from fluctuations in Fedya's code; the path to files on the cluster is `/nfs/scistore08/kondrgrp/alyulina/sandpiper/dynamics/h=sigm/ver21/rai` and locally `/Users/alyulina/Projects/Kondrashov/Sandpiper/h=sigm/ver21/Rai's` see `parsing again.ipynb`
 - [x] do what Fedya asked to do analytically
-- [ ] wait for Rai's reply to Fedya's email
+- [x] wait for Rai's reply to Fedya's email
 
 (eventually)
 - [ ] have a proper description here and in other READMEs
@@ -27,3 +28,7 @@ ver20: taking exp(s) instead of s for fitness + no limits on the distr of s; sti
 trying to understand why Fedya's results do not match Rai's? either something is wrong with interpolation / me parsing things (running stuff to see if this is the case) or with Rai's code / math (currently focusing on this) or with Fedya's code 
 
 Fedya: maybe we should be scaling sigma after all
+
+ver21: yes!!
+
+ver22: running the latest version of Fedya's code (fixed: sigmoid instead of exp + beta is scaled inside now) on Rai's points to compare it with the 0 to 1 Rai's frequency version (data in ver14?) – hopefully it all works everywhere except for where there are beneficial allelel because the theory can't describe them (is this because there is no equilibrium freq?)
