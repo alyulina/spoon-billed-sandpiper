@@ -14,7 +14,7 @@ To do:
 For the paper:
 - [ ] make a repo for all the code (with Rai and possibly Fedya)
 - [ ] start writing methods 
-- [ ] rewrite Mathematica code?
+- [ ] rewrite Mathematica code? maybe even have it in python?
 
 
 
