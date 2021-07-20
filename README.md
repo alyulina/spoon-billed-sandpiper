@@ -13,8 +13,10 @@
 
 For the paper:
 - [ ] make a repo for all the code (with Rai and possibly Fedya)
-- [ ] start writing methods 
 - [ ] rewrite Mathematica code? maybe even have it in python?
+- [ ] start writing methods 
+- [ ] have all lit references (what we know about the shape of the dfe in theory + h(s) dependancy + any studies that inferred that from data)
+
 
 
 
