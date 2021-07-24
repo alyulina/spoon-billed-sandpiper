@@ -1,3 +1,5 @@
+A local version of this repo is in /Users/alyulina/Projects/Kondrashov/Sandpiper/h=sigm/github-repo.
+
 **To do:**
 
 (right now)
