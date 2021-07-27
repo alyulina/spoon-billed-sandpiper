@@ -3,6 +3,7 @@ A local version of this repo is in `/Users/alyulina/Projects/Kondrashov/Sandpipe
 **To do:**
 
 (right now)
+- [ ] maybe also look at the sh<1/4Ne treshold, which is equal to 1/2Ne for the typical values of h of 1/2? and compare it with the 1/4Ne case 
 - [ ] take points near the border of 1% of s larger than 1/4Ne (where there are some positive s but not more than 1% is above the 1/4Ne treshold); discard everything with abs(mu) or sigma > 0.01; take Rai's point + add Fedya's if needed, redo interpolation in that triangle (we do not believe in other distributions anyway), and then run Fedya's code on the line where the interpolated values match Mateusz' results (Fedya talked to Mateusz and he said that there are better methods for calculating dens/het and that he would use them and send us new numbers)
 - [x] run Fedya's code for the same points as Rai where it does not match Rai's results and use this to do interpolation + infer points where distributions match Mateusz' data; for that, need to check the % of s>1/4Ne for each point and took those above a treshold that Fedya set (what to do with points that are very slow? can I discard them and run interpolation not on a square grid in Mathematica/python?)
 - [x] run the latest version of Fedya's code (fixed: sigmoid instead of exp + beta is scaled inside now) on Rai's points and compare it with the 0 to 1 Rai's frequency version – this is ver22; write to Fedya once done – hopefully it all works everywhere except for where there are beneficial allelel because the theory can't describe them
