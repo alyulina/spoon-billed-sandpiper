@@ -23,9 +23,6 @@ For the paper:
 - [ ] have all lit references (what we know about the shape of the dfe in theory + h(s) dependancy + any studies that inferred that from data)
 
 
-
-
-
 **Current state of things:**
 
 ver18, ver19: not scaling sigma in Fedya's code, but now it does not work for large abs mu and small sigma because we have a cut-off on the distribution of s; change it to something else sinse s is not limited by -1 and 1 (maybe we should start taking exp(s))?
@@ -45,6 +42,16 @@ talked to Rai: sigma is time in the heat equation so this dependence makes sense
 issues: Rai's neutral het is very different from Hexp when only including frequencies up to 1-1/2N (which makes sense but is potentially a problem);
 theory does not match experiments when there are many positive s in the distribution (theory only works for s < 1/2N?) – this is ok, but as of now they also do not match when beta > 0 (should be fixed in ver22) and when het is very low (which also makes sense – need to try to estimate errors)
 
-not yet updated – see the to do above
+talked to Fedya: decided to discard everything with abs(mu) or sigma > 0.01 and where there are too many positive s; take Rai's points + add Fedya's if needed, redo interpolation in that triangle (we do not believe in other distributions anyway), and then run Fedya's code on the line where the interpolated values match Mateusz' results (Fedya talked to Mateusz and he said that there are better methods for calculating dens/het and that he would use them and send us new numbers)
+
+used Mathematica for every point on Rai's grid to find how much of the probability density of s is above some treshhold (tried 0, 1/2Ne, and 1/4Ne, where Ne = 500,000 is the red-necked stint's Ne) - this is in `/Users/alyulina/Projects/Kondrashov/Sandpiper/h=sigm/ver22/area.nb` - and looked at how this looks like in python - `/Users/alyulina/Projects/Kondrashov/Sandpiper/h=sigm/ver22/Rai's/notebook-ver22.ipynb` - chose points where there are some positive but not more than 0.05 of the density is above 0 + three points below that (the treshhold turned out to not be very important and maybe it might be a good idea to just switch to 1/2Ne because this is the drift barrier for h = 1/2) - for viz see `Users/alyulina/Projects/Kondrashov/Sandpiper/h=sigm/ver22/Rai's/to_run.png` and for points see `/Users/alyulina/Projects/Kondrashov/Sandpiper/h=sigm/ver22/pos/RNS_input.txt`
+
+ran Fedya's code on the points above (the cluster folder for that is '/nfs/scistore08/kondrgrp/alyulina/sandpiper/dynamics/h=sigm/ver22/pos'); am looking at the results now
 
 
+**How to do things:**
+- generate points (`make points.ipynb`) + an input file (`RNS_input.txt`) with mu, sigma, alpha, beta, and the output file name and location (`make shs.ipynb`)
+- make a batch script (`run_RNS.sh`) to run Fedya's code (`g++ -o RNSv8 RNSv8.cpp`) on the cluster + make a folder for output (`./rns`) and slurm output (`./rns/outs`)
+- use a python notebook on the cluster (`notebook-ver22.ipynb`) to calculate averages across the ten runs (`rns-hets-points_rns_avg-het.txt`, `rns-hets-points_rns_pols.txt`, and split into separate files with different alpha and beta in `./out`)
+- download data on the local machine
+- run a Mathematica notebook to make plots (`plots-ver22-rns.nb`)
