@@ -46,7 +46,7 @@ talked to Fedya: decided to discard everything with abs(mu) or sigma > 0.01 and 
 
 used Mathematica for every point on Rai's grid to find how much of the probability density of s is above some treshhold (tried 0, 1/2Ne, and 1/4Ne, where Ne = 500,000 is the red-necked stint's Ne) - this is in `/Users/alyulina/Projects/Kondrashov/Sandpiper/h=sigm/ver22/area.nb` - and looked at how this looks like in python - `/Users/alyulina/Projects/Kondrashov/Sandpiper/h=sigm/ver22/Rai's/notebook-ver22.ipynb` - chose points where there are some positive but not more than 0.05 of the density is above 0 + three points below that (the treshhold turned out to not be very important and maybe it might be a good idea to just switch to 1/2Ne because this is the drift barrier for h = 1/2) - for viz see `Users/alyulina/Projects/Kondrashov/Sandpiper/h=sigm/ver22/Rai's/to_run.png` and for points see `/Users/alyulina/Projects/Kondrashov/Sandpiper/h=sigm/ver22/pos/RNS_input.txt`
 
-ran Fedya's code on the points above (the cluster folder for that is '/nfs/scistore08/kondrgrp/alyulina/sandpiper/dynamics/h=sigm/ver22/pos'); am looking at the results now
+ran Fedya's code on the points above (the cluster folder for that is `/nfs/scistore08/kondrgrp/alyulina/sandpiper/dynamics/h=sigm/ver22/pos`); am looking at the results now (in `/Users/alyulina/Projects/Kondrashov/Sandpiper/h=sigm/ver22/pos/out/`) - need to add a section to `/Users/alyulina/Projects/Kondrashov/Sandpiper/h=sigm/ver22/Rai's/notebook-ver22.ipynb`
 
 
 **How to do things:**
