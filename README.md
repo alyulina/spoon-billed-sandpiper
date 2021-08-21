@@ -50,7 +50,7 @@ ran Fedya's code on the points above (the cluster folder for that is `/nfs/scist
 
 talked to Fedya and he said that the results are okay and that we should merge them and interpolate and run the simulation for the sandpiper
 
-decided to run some more of Fedya's code to include abs(mu) and sigma of 0.001; once it's done: need to concatenate Fedya's and Rai's (saving as `to_use_rai.txt`) results 
+decided to run some more of Fedya's code to include abs(mu) and sigma of 0.01; once it's done: need to concatenate Fedya's and Rai's (saving as `to_use_rai.txt`) results 
 
 
 **How to do things:**
