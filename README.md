@@ -63,6 +63,11 @@ also decided to average over the last 1,000 points for those red-necked sting si
 - run a Mathematica notebook to make plots (`plots-ver22-rns.nb`)
 
 
+**How to run Fedya's code:**
+to compile: `g++ -o rns rns.cpp`
+to run: `rns mu sigma alpha beta path/out.txt`, where *mu*, *sigma*, and *alpha* are parameters of the skewed normal distribution and *beta* is a parameter in *h(s)*  
+
+
 **Some relevant papers are:**
 * 'On the probability of fixation of mutant genes in a population' by Motoo Kimura. *Genetics*, 1962.
 * 'The distribution of gene frequencies in a population' by Sewal Wright. *Genetics*, 1937.
