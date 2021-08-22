@@ -53,6 +53,8 @@ decided to run some more of Fedya's code to include abs(mu) and sigma of 0.01; o
 
 also decided to average over the last 1,000 points for those red-necked sting simulations
 
+this could be potentially relevant later? https://stackoverflow.com/questions/37142638/how-to-compute-contour-for-a-triangular-grid-with-matplotlib
+
 
 **How to do things:**
 - generate points (`make points.ipynb`) + an input file (`RNS_input.txt`) with mu, sigma, alpha, beta, and the output file name and location (`make shs.ipynb`)
