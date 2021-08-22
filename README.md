@@ -61,3 +61,9 @@ also decided to average over the last 1,000 points for those red-necked sting si
 - use a python notebook on the cluster (`notebook-ver22.ipynb`) to calculate averages across the ten runs (`rns-hets-points_rns_avg-het.txt`, `rns-hets-points_rns_pols.txt`, and split into separate files with different alpha and beta in `./out`); alternatively, if jupyterhub is down, convert it to a pythin script and run that 
 - download data on the local machine
 - run a Mathematica notebook to make plots (`plots-ver22-rns.nb`)
+
+
+**Some relevant papers are:**
+'On the probability of fixation of mutant genes in a population' by Motoo Kimura. Genetics, 1962.
+'The distribution of gene frequencies in a population' by Sewal Wright. Genetics, 1937.
+'Estimation of deleterious mutation parameters in natural populations' by Hong-Wen Deng and Michael Lynch. Genetics, 1996.
