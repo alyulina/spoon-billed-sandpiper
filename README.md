@@ -7,14 +7,13 @@ A local version of this repo is in `/Users/alyulina/Projects/Kondrashov/Sandpipe
 - [x] maybe also look at the sh<1/4Ne treshold, which is equal to 1/2Ne for the typical values of h of 1/2? and compare it with the 1/4Ne case; did that - the points where the results do not match are the same, so it does not really matter for the calculations (but might generally make more sense since most h are 1/2?); eventually started looking at points with more than 5% of the probability density for the distribution of s was positive
 - [x] run Fedya's code for the same points as Rai where it does not match Rai's results and use this to do interpolation + infer points where distributions match Mateusz' data; for that, need to check the % of s>1/4Ne for each point and took those above a treshold that Fedya set (what to do with points that are very slow? can I discard them and run interpolation not on a square grid in Mathematica/python?)
 - [x] run the latest version of Fedya's code (fixed: sigmoid instead of exp + beta is scaled inside now) on Rai's points and compare it with the 0 to 1 Rai's frequency version – this is in `/nfs/scistore08/kondrgrp/alyulina/sandpiper/dynamics/h=sigm/ver22/rai`; write to Fedya once done – hopefully it all works everywhere except for where there are beneficial allelel because the theory can't describe them
-- [x] once the jobs are finished: make plots of mu-sigma grids to compare the results of Rai's and Fedya's codes; also compute errors from fluctuations in Fedya's code; the path to files on the cluster is `/nfs/scistore08/kondrgrp/alyulina/sandpiper/dynamics/h=sigm/ver21/rai` and locally `/Users/alyulina/Projects/Kondrashov/Sandpiper/h=sigm/ver21/Rai's` see `parsing again.ipynb`
-- [x] do what Fedya asked to do analytically
-- [x] wait for Rai's reply to Fedya's email
+
 
 (eventually)
 - [ ] have a proper description here and in other READMEs
 - [ ] upload final code / plots
 - [ ] write down paths to files on the cluster
+
 
 For the paper:
 - [ ] make a repo for all the code (with Rai and possibly Fedya)
