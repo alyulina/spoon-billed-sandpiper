@@ -52,6 +52,8 @@ talked to Fedya and he said that the results are okay and that we should merge t
 
 decided to run some more of Fedya's code to include abs(mu) and sigma of 0.01; once it's done: need to concatenate Fedya's and Rai's (saving as `to_use_rai.txt`) results 
 
+also decided to average over the last 1,000 points for those red-necked sting simulations
+
 
 **How to do things:**
 - generate points (`make points.ipynb`) + an input file (`RNS_input.txt`) with mu, sigma, alpha, beta, and the output file name and location (`make shs.ipynb`)
