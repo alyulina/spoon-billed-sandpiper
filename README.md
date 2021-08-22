@@ -65,7 +65,7 @@ also decided to average over the last 1,000 points for those red-necked sting si
 
 **How to run Fedya's code:**  
 to compile: `g++ -o rns rns.cpp`  
-to run: `rns mu sigma alpha beta path/out.txt`, where *mu*, *sigma*, and *alpha* are parameters of the skewed normal distribution and *beta* is a parameter in *h(s)*  
+to run: `rns mu sigma alpha beta path/out.txt`, where *mu*, *sigma*, and *alpha* are parameters of the distribution of fitness effects *s* and *beta* is a parameter in the dominance coefficient function *h(s)*  
 
 
 **Some relevant papers are:**  
