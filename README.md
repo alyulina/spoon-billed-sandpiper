@@ -1,4 +1,4 @@
-A local version of this repo is in `/Users/alyulina/Projects/Kondrashov/Sandpiper/h=sigm/github-repo`.
+A local version of this repo is in `/Users/alyulina/Projects/Kondrashov/Sandpiper/github-repo`.
 
 **To do:**
 
