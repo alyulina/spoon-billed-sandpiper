@@ -57,7 +57,7 @@ also decided to average over the last 1,000 points for those red-necked sting si
 
 this could be potentially relevant later? https://stackoverflow.com/questions/37142638/how-to-compute-contour-for-a-triangular-grid-with-matplotlib
 
-waiting for the numbers form Mateusz + NEED TO LEARN HOW TO DO INTERPOLATION IN PYTHON
+waiting for the numbers form Mateusz (I also should exactly understand what they are) + NEED TO LEARN HOW TO DO INTERPOLATION IN PYTHON
 
 
 **How to do things:**
