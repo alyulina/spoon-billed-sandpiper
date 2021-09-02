@@ -24,6 +24,8 @@ For the paper:
 
 **Current state of things:**
 
+What we did: for a grid of parameters of the distribution of fitness effects, we run Rai's code to calculate heterozygosity for the red-necked stint in points where distributions only had negative selection coefficients + run Fedya's simulations for points for which no more than 1% (check that!) larger than 0. Rai's code uses the 1932 Wright equation for the distribution of allele frequencies x in a one locus, two allele model for a diploid population. For a given distribution of fitness effects, heterozygosty is given by the expected value of 2x(1-x) given the distribution of x, s (skew normal distribution), and h(s) (sigmoid). Fedya's code runs discrete-generation forward-time Wright-Fisher simulations for a population of diploid sexual individuals with infinite recombination (my understanding - so that sites are effectiveky unlinked and one locus approximation applies).
+
 ver18, ver19: not scaling sigma in Fedya's code, but now it does not work for large abs mu and small sigma because we have a cut-off on the distribution of s; change it to something else sinse s is not limited by -1 and 1 (maybe we should start taking exp(s))?
 
 ver20: taking exp(s) instead of s for fitness + no limits on the distr of s; still looks bad (Rai's results do not match Fedya's) – what's wrong?
