@@ -4,7 +4,6 @@ A local version of this repo is in `/Users/alyulina/Projects/Kondrashov/Sandpipe
 
 (right now)
 
-(this is my to do for tomorrow:)
 - [ ] merge Rai's points (are those in `ver14` or somewhere else?) with Fedya's points (need to go to the cluster for that and average the last 10000 points of each simulation, download locally + have errors??)
 - [ ] after I have all the points, figure out which Mateusz' new values to use (and check in w/ Fedya)
 - [ ] do interpolation (learn how to do that in pythin, ideally)
