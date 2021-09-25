@@ -54,7 +54,7 @@ talked to Fedya and he said that the results are okay and that we should merge t
 decided to run some more of Fedya's code to include abs(mu) and sigma of 0.01; once it's done: need to concatenate Fedya's and Rai's (saving as `points_to_use_fedya.txt` and `points_to_use_rai.txt`) results; here's how it looks like:
 
 ![alt text](points_to_use.png)
-looking at the results of Fedya's code now + merging them with Rai's; also decided to average over the last 1,000 points for those red-necked sting simulations
+looking at the results of Fedya's code now + merging them with Rai's; also decided to average over the last 1,000 points for red-necked sting simulations (see pics in `/Users/alyulina/Projects/Kondrashov/Sandpiper/h=sigm/ver22/Rai's/notebook-ver22.ipynb` for why)
 
 this could be potentially relevant later? https://stackoverflow.com/questions/37142638/how-to-compute-contour-for-a-triangular-grid-with-matplotlib
 
