@@ -49,7 +49,7 @@ used Mathematica for every point on Rai's grid to find how much of the probabili
 
 ran Fedya's code on the points above (the cluster folder for that is `/nfs/scistore08/kondrgrp/alyulina/sandpiper/dynamics/h=sigm/ver22/pos`); am looking at the results now (in `/Users/alyulina/Projects/Kondrashov/Sandpiper/h=sigm/ver22/pos/out/`) - need to add a section to `/Users/alyulina/Projects/Kondrashov/Sandpiper/h=sigm/ver22/Rai's/notebook-ver22.ipynb`
 
-*talked to Fedya and he said that the results are okay and that we should merge them and interpolate and run the simulation for the sandpiper*
+*talked to Fedya and he said that the results are okay and that we should merge them and interpolate and run the simulation for the sandpiper*  
 waiting for the numbers form Mateusz (I also should exactly understand what they are) + NEED TO LEARN HOW TO DO INTERPOLATION IN PYTHON
 
 decided to run some more of Fedya's code to include abs(mu) and sigma of 0.01; once it's done: need to concatenate Fedya's and Rai's (saving as `points_to_use_fedya.txt` and `points_to_use_rai.txt`) results; here's how it looks like:
