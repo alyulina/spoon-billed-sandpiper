@@ -51,7 +51,8 @@ ran Fedya's code on the points above (the cluster folder for that is `/nfs/scist
 
 talked to Fedya and he said that the results are okay and that we should merge them and interpolate and run the simulation for the sandpiper
 
-decided to run some more of Fedya's code to include abs(mu) and sigma of 0.01; once it's done: need to concatenate Fedya's and Rai's (saving as `points_to_use_fedya.txt` and `points_to_use_rai.txt`) results 
+decided to run some more of Fedya's code to include abs(mu) and sigma of 0.01; once it's done: need to concatenate Fedya's and Rai's (saving as `points_to_use_fedya.txt` and `points_to_use_rai.txt`) results; here's how it looks like:
+![alt text](https://github.com/alyulina/sandpiper/blob/main/points_to_use.jpg?raw=true)
 
 also decided to average over the last 1,000 points for those red-necked sting simulations
 
