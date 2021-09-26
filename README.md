@@ -61,8 +61,10 @@ waiting for the numbers form Mateusz (I also should exactly understand what they
 
 decided to run some more of Fedya's code to include abs(mu) and sigma of 0.01; once it's done: need to concatenate Fedya's and Rai's (saving as `points_to_use_fedya.txt` and `points_to_use_rai.txt`) results; here's how it looks like:
 
-![alt text](points_to_use.png)
+![alt text](points-to-use-for-rns-het.png)
 looking at the results of Fedya's code now + merging them with Rai's; also decided to average over the last 1,000 points for red-necked sting simulations (see pics in `/Users/alyulina/Projects/Kondrashov/Sandpiper/h=sigm/ver22/Rai's/notebook-ver22.ipynb` for why)
+
+**renamed/reorganized some notebooks, files mentioned above might not exist anymore, but I am hoping to write up a clear description soon**  
 
 this could be potentially relevant later? https://stackoverflow.com/questions/37142638/how-to-compute-contour-for-a-triangular-grid-with-matplotlib
 
