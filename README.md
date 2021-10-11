@@ -5,14 +5,15 @@ A local version of this repo is in `/Users/alyulina/Projects/Kondrashov/Sandpipe
 (right now)
 
 
-- [ ] take rns-het_points-to-use_fedya.txt and for each point, get the avg het value from data on the cluster
-- [ ] upload all the scripts from the cluster that were used for that here
-- [ ] merge Rai's points (are those in `ver14` or somewhere else?) with Fedya's points (need to go to the cluster for that and average the last 10000 points of each simulation, download locally + have errors??)
+- [x] take rns-het_points-to-use_fedya.txt and for each point, get the avg het value from data on the cluster
+- [x] upload all the scripts from the cluster that were used for that here
+- [x] merge Rai's points (are those in `ver14` or somewhere else?) with Fedya's points (need to go to the cluster for that and average the last 10000 points of each simulation, download locally + have errors??)
 - [ ] after I have all the points, figure out which Mateusz' new values to use (and check in w/ Fedya)
-- [ ] do interpolation (learn how to do that in pythin, ideally)
+- [ ] do interpolation (learn how to do that in python, ideally)
+- [ ] CANNOT FIGURE OUT HOW
 - [ ] extract points where rns hets match the data and run Fedya's code on them, both for the rns and the sbs  
 
-- [ ] take points near the border of 1% of s larger than 1/4Ne (where there are some positive s but not more than 1% is above the 1/4Ne treshold); discard everything with abs(mu) or sigma > 0.01; take Rai's point + add Fedya's if needed, redo interpolation in that triangle (we do not believe in other distributions anyway), and then run Fedya's code on the line where the interpolated values match Mateusz' results (Fedya talked to Mateusz and he said that there are better methods for calculating dens/het and that he would use them and send us new numbers); update: looked at points where there are positive s, but no more than 1% larger than the cut-off – these are the same points; results of running Fedya's code on points near the border are in `/nfs/scistore08/kondrgrp/alyulina/sandpiper/dynamics/h=sigm/ver22/pos` (pos stands for positive); have not finished the rest yet
+- [x] take points near the border of 1% of s larger than 1/4Ne (where there are some positive s but not more than 1% is above the 1/4Ne treshold); discard everything with abs(mu) or sigma > 0.01; take Rai's point + add Fedya's if needed, redo interpolation in that triangle (we do not believe in other distributions anyway), and then run Fedya's code on the line where the interpolated values match Mateusz' results (Fedya talked to Mateusz and he said that there are better methods for calculating dens/het and that he would use them and send us new numbers); update: looked at points where there are positive s, but no more than 1% larger than the cut-off – these are the same points; results of running Fedya's code on points near the border are in `/nfs/scistore08/kondrgrp/alyulina/sandpiper/dynamics/h=sigm/ver22/pos` (pos stands for positive); have not finished the rest yet
 - [x] maybe also look at the sh<1/4Ne treshold, which is equal to 1/2Ne for the typical values of h of 1/2? and compare it with the 1/4Ne case; did that - the points where the results do not match are the same, so it does not really matter for the calculations (but might generally make more sense since most h are 1/2?); eventually started looking at points with more than 5% of the probability density for the distribution of s was positive
 - [x] run Fedya's code for the same points as Rai where it does not match Rai's results and use this to do interpolation + infer points where distributions match Mateusz' data; for that, need to check the % of s>1/4Ne for each point and took those above a treshold that Fedya set (what to do with points that are very slow? can I discard them and run interpolation not on a square grid in Mathematica/python?)
 - [x] run the latest version of Fedya's code (fixed: sigmoid instead of exp + beta is scaled inside now) on Rai's points and compare it with the 0 to 1 Rai's frequency version – this is in `/nfs/scistore08/kondrgrp/alyulina/sandpiper/dynamics/h=sigm/ver22/rai`; write to Fedya once done – hopefully it all works everywhere except for where there are beneficial allelel because the theory can't describe them
@@ -69,7 +70,7 @@ looking at the results of Fedya's code now + merging them with Rai's; also decid
 
 **renamed/reorganized some notebooks, files mentioned above might not exist anymore, but I am hoping to write up a clear description soon** (also see the first paragraph above) 
 
-this could be potentially relevant later? https://stackoverflow.com/questions/37142638/how-to-compute-contour-for-a-triangular-grid-with-matplotlib
+issue: cannot make interpolation in python work; missing points for beta = 3000 when comparing interpolated curves and data points
 
 
 **How to do things:**
