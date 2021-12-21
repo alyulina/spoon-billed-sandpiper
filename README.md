@@ -8,10 +8,10 @@ A local version of this repo is in `/Users/alyulina/Projects/Kondrashov/Sandpipe
 - [x] take rns-het_points-to-use_fedya.txt and for each point, get the avg het value from data on the cluster
 - [x] upload all the scripts from the cluster that were used for that here
 - [x] merge Rai's points (are those in `ver14` or somewhere else?) with Fedya's points (need to go to the cluster for that and average the last 10000 points of each simulation, download locally + have errors??)
-- [ ] after I have all the points, figure out which Mateusz' new values to use (and check in w/ Fedya)
-- [ ] do interpolation (learn how to do that in python, ideally)
-- [ ] CANNOT FIGURE OUT HOW
-- [ ] extract points where rns hets match the data and run Fedya's code on them, both for the rns and the sbs  
+- [x] after I have all the points, figure out which Mateusz' new values to use (and check in w/ Fedya)
+- [x] do interpolation (learn how to do that in python, ideally)
+- [x] extract points where rns hets match the data and run Fedya's code on them, both for the rns and the sbs  
+- [ ] look at the results!
 
 - [x] take points near the border of 1% of s larger than 1/4Ne (where there are some positive s but not more than 1% is above the 1/4Ne treshold); discard everything with abs(mu) or sigma > 0.01; take Rai's point + add Fedya's if needed, redo interpolation in that triangle (we do not believe in other distributions anyway), and then run Fedya's code on the line where the interpolated values match Mateusz' results (Fedya talked to Mateusz and he said that there are better methods for calculating dens/het and that he would use them and send us new numbers); update: looked at points where there are positive s, but no more than 1% larger than the cut-off – these are the same points; results of running Fedya's code on points near the border are in `/nfs/scistore08/kondrgrp/alyulina/sandpiper/dynamics/h=sigm/ver22/pos` (pos stands for positive); have not finished the rest yet
 - [x] maybe also look at the sh<1/4Ne treshold, which is equal to 1/2Ne for the typical values of h of 1/2? and compare it with the 1/4Ne case; did that - the points where the results do not match are the same, so it does not really matter for the calculations (but might generally make more sense since most h are 1/2?); eventually started looking at points with more than 5% of the probability density for the distribution of s was positive
@@ -69,9 +69,6 @@ decided to run some more of Fedya's code to include abs(mu) and sigma of 0.01; o
 looking at the results of Fedya's code now + merging them with Rai's; also decided to average over the last 1,000 points for red-necked sting simulations (see pics in `/Users/alyulina/Projects/Kondrashov/Sandpiper/h=sigm/ver22/Rai's/notebook-ver22.ipynb` for why)
 
 **renamed/reorganized some notebooks, files mentioned above might not exist anymore, but I am hoping to write up a clear description soon** (also see the first paragraph above) 
-
-issue: cannot make interpolation in python work; missing points for beta = 3000 when comparing interpolated curves and data points
-
 
 **How to do things:**
 - generate {*mu*, *sigma*, *alpha*, *beta*} points + an input file (`RNS_input.txt`) with *mu*, *sigma*, *alpha*, *beta*, and the output file name and location (`make shs.ipynb`)
