@@ -72,7 +72,11 @@ looking at the results of Fedya's code now + merging them with Rai's; also decid
 
 done w/ interpolation (see `notebook-ver22.ipynb`);
 run Fedya's code on the points below (extracted from contours with relative error of 0 (blue) and -0.1 (orange)): 
+
 ![alt text](rns-het-err=0_-0.1_interpn.png)
+
+used `parsing-hets-out.ipynb` to parse the outputs; averaging over the last 100 points for het and dens for the rns and only taking the last point for the sbs;
+NEED TO MAKE (t) PLOTS AND LOOK AT THE DYNAMICS + PLOT DISTRIBUTIONS + COLOR POINTS BY ERROR 
 
 **How to do things:**
 - generate {*mu*, *sigma*, *alpha*, *beta*} points + an input file (`RNS_input.txt`) with *mu*, *sigma*, *alpha*, *beta*, and the output file name and location (`make shs.ipynb`)
