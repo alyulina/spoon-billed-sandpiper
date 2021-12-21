@@ -70,6 +70,10 @@ looking at the results of Fedya's code now + merging them with Rai's; also decid
 
 **renamed/reorganized some notebooks, files mentioned above might not exist anymore, but I am hoping to write up a clear description soon** (also see the first paragraph above) 
 
+done w/ interpolation (see `notebook-ver22.ipynb`);
+run Fedya's code on the points below (extracted from contours with relative error of 0 (blue) and -0.1 (orange)): 
+![alt text](rns-het-err=0_-0.1_interpn.png)
+
 **How to do things:**
 - generate {*mu*, *sigma*, *alpha*, *beta*} points + an input file (`RNS_input.txt`) with *mu*, *sigma*, *alpha*, *beta*, and the output file name and location (`make shs.ipynb`)
 - make a batch script (`run_RNS.sh`) to run Fedya's code (`g++ -o RNSv8 RNSv8.cpp`) on the cluster + make a folder for output (`./rns`) and slurm output (`./rns/outs`)
