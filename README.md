@@ -79,6 +79,15 @@ run Fedya's code on the points below (extracted from contours with relative erro
 used `parsing-hets-out.ipynb` to parse the outputs; averaging over the last 100 points for het and dens for the rns and only taking the last point for the sbs;
 NEED TO MAKE (t) PLOTS AND LOOK AT THE DYNAMICS + PLOT DISTRIBUTIONS + COLOR POINTS BY ERROR 
 
+**numbers from Mateusz' data:**
+rns het is 0.00091 (#C_ruf_02 0.000911 from Sep 21, 2021 email, this should be high-coverage rns); used to be 0.00064;
+sbs het is 0.00063 (#C_pyg_Ep 0.000627 from Sep 21, 2021 email, this should be high-coverage sbs); used to be 0.00041;
+
+rns dens is 0.0021 (#RNS nonsyn_density 0.002083 from Sep 21, 2021 email); used to be 0.00088;
+sbs dens is 0.0012 (#SBS	nonsyn_density 0.001183 from Sep 21, 2021 email); used to be 0.00073.
+
+Might want to double-check w/ Fedya!
+
 **How to do things:**
 - generate {*mu*, *sigma*, *alpha*, *beta*} points + an input file (`RNS_input.txt`) with *mu*, *sigma*, *alpha*, *beta*, and the output file name and location (`make shs.ipynb`)
 - make a batch script (`run_RNS.sh`) to run Fedya's code (`g++ -o RNSv8 RNSv8.cpp`) on the cluster + make a folder for output (`./rns`) and slurm output (`./rns/outs`)
