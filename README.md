@@ -79,6 +79,8 @@ run Fedya's code on the points below (extracted from contours with relative erro
 used `parsing-hets-out.ipynb` to parse the outputs; averaging over the last 100 points for het and dens for the rns and only taking the last point for the sbs;
 NEED TO MAKE (t) PLOTS AND LOOK AT THE DYNAMICS + PLOT DISTRIBUTIONS + COLOR POINTS BY ERROR 
 
+bad news: there was a bug in the code, need to rerun alpha = 0, beta = 3000 points :c
+
 **numbers from Mateusz' data:**
 rns het is 0.00091 (#C_ruf_02 0.000911 from Sep 21, 2021 email, this should be high-coverage rns); used to be 0.00064;
 sbs het is 0.00063 (#C_pyg_Ep 0.000627 from Sep 21, 2021 email, this should be high-coverage sbs); used to be 0.00041;
