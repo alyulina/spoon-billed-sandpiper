@@ -90,6 +90,12 @@ sbs dens is 0.0012 (#SBS	nonsyn_density 0.001183 from Sep 21, 2021 email); used 
 
 Might want to double-check w/ Fedya!
 
+Getting back to things after a long time... After talking w/ Fedya, we decided that we only want to be looking at heterozygosity and not polymorphism density (too noisy); take the average heterozygosity at nonsynonymous sites for all samples; interpolate Rai's red-necked stint heterozygosity data to match the new H_rns and extract points to run simulations; keep the distributions of selection effects w/ 0.001 of s > 0; run simulations, find where the y overlap w/ H_sbs; look at distributions + time dynamics. 
+
+Do we also want to add more density to lethal mutations later?
+
+Taking new hets values from Mateusz' email from Feb 23, 2022: H_sbs = 0.00057, H_rns = 0.0047.
+
 **How to do things:**
 - generate {*mu*, *sigma*, *alpha*, *beta*} points + an input file (`RNS_input.txt`) with *mu*, *sigma*, *alpha*, *beta*, and the output file name and location (`make shs.ipynb`)
 - make a batch script (`run_RNS.sh`) to run Fedya's code (`g++ -o RNSv8 RNSv8.cpp`) on the cluster + make a folder for output (`./rns`) and slurm output (`./rns/outs`)
