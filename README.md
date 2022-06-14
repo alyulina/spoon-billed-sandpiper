@@ -94,7 +94,7 @@ Getting back to things after a long time... After talking w/ Fedya, we decided t
 
 Do we also want to add more density to lethal mutations later?
 
-Taking new hets values from Mateusz' email from Feb 23, 2022: H_sbs = 0.00057, H_rns = 0.0047.
+Taking new hets values from Mateusz' email from Feb 23, 2022: H_sbs = 0.00057; from Mateusz' email from June 14, 2022 H_rns = 0.00087.
 
 **How to do things:**
 - generate {*mu*, *sigma*, *alpha*, *beta*} points + an input file (`RNS_input.txt`) with *mu*, *sigma*, *alpha*, *beta*, and the output file name and location (`make shs.ipynb`)
