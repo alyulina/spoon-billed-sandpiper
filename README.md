@@ -96,6 +96,8 @@ Do we also want to add more density to lethal mutations later?
 
 Taking new hets values from Mateusz' email from Feb 23, 2022: H_sbs = 0.00057; from Mateusz' email from June 14, 2022 H_rns = 0.00087.
 
+Started running simulations w/ new het values on the cluster: outputs are in /nfs/scistore08/kondrgrp/fkondras/alyulina/ver23.
+
 **How to do things:**
 - generate {*mu*, *sigma*, *alpha*, *beta*} points + an input file (`RNS_input.txt`) with *mu*, *sigma*, *alpha*, *beta*, and the output file name and location (`make shs.ipynb`)
 - make a batch script (`run_RNS.sh`) to run Fedya's code (`g++ -o RNSv8 RNSv8.cpp`) on the cluster + make a folder for output (`./rns`) and slurm output (`./rns/outs`)
