@@ -1,1 +1,1 @@
-This folder contains all of the input data required to generate figures in `../figures` by running the code in `../parameter fitting`. These data were obtained by runnning the code in `../simulations`.
+This folder contains all of the input data required to generate figures in `../figures` by running the code in `../parameter-fitting`. These data were obtained by runnning the code in `../simulations`.
