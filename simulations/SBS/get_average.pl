@@ -60,7 +60,7 @@ while(<BNECK>)
 {$line = $_;
 
 
-if ($line =~ m/before/)
+if ($line =~ m/after/)
 {
 
     if ($num != 0){$bneck{$num} = $average/$count;}
@@ -97,6 +97,7 @@ if ($line =~ m/after/)
     if ($num != 0)
        {$average /= $count; 
        $difference = $average - $list{$num};  print OUTFILE  "\t$difference";
+       $difference = 0;
        $difference = $average - $bneck{$num}; print OUTFILE2 "\t$difference";
        }
 
@@ -115,7 +116,11 @@ $count++;
 
 }
 
-print OUTFILE "\n";
+$average /= $count; 
+$difference = $average - $list{$num};  print OUTFILE  "\t$difference";
+$difference = $average - $bneck{$num}; print OUTFILE2 "\t$difference";
+
+print OUTFILE  "\n";
 print OUTFILE2 "\n";
 
 print "$after\n";
