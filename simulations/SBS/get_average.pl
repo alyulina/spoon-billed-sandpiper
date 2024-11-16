@@ -51,6 +51,8 @@ $count++;
 
 }
 
+$list{$num} = $average/$count;
+
 print "$before\n";
 
 
@@ -80,6 +82,8 @@ $count++;
 }
 
 }
+
+$bneck{$num} = $average/$count;
 
 print "$bneck\n";
 
