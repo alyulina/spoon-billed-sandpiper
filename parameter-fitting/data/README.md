@@ -1,1 +1,0 @@
-This folder contains all of the input data required to generate figures in `../figures` by running the code in `../fitting_selection_coefficients.ipynb`. These files were obtained by runnning the code in `../../simulations`.
