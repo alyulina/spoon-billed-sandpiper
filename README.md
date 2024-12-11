@@ -1,4 +1,4 @@
-This repository provides some of the associated computer code for the manuscript  
+This repository provides the associated computer code for the manuscript  
 
 **Konczal M. et al.** _Population genomics of the critically endangered spoon-billed sandpiper_.  
   
