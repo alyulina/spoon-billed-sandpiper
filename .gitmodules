@@ -1,0 +1,3 @@
+[submodule "snp-calling"]
+	path = snp-calling
+	url = https://github.com/konczal/SBS
